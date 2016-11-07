@@ -18,4 +18,5 @@ Optimize schedule of expedition for Kantai Collection and Warship Girls
 ## 注意
 - 出力される総遠征時間は目安の数値です
 - キラ付けや大発には対応していません
+- temp.lp、query.txt、result.txt、query.solは自動生成されます(削除しても構いません)
 - 表示してほしくない遠征があれば、table1.csvやtable2.csvを自前で編集してください。UTF-8形式・CR+LFを想定しています
