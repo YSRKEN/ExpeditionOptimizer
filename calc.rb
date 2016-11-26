@@ -29,7 +29,7 @@ query_file = ''
 #目的関数
 query_file << "minimize\nmin_time\nsubject to\n"
 #制約条件(資源の総和)
-num = [1, 1, 1, 1/3]
+num = [1, 1, 1, 1.0/3]
 4.times{|si|
 	table_size.times{|ni|
 		query_file << "+#{table[ni][si]} x#{ni} "
