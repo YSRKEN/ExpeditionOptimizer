@@ -7,7 +7,7 @@ Optimize schedule of expedition for Kantai Collection and Warship Girls
 　Windows用に作りましたが、単純な仕組みなので他OSでも頑張れば動かせるのではないでしょうか？
 
 ## 実行例
-![実行例](https://cloud.githubusercontent.com/assets/3734392/20052981/d15bbec2-a519-11e6-8a3d-6c7191ab885a.png)
+![実行例](https://cloud.githubusercontent.com/assets/3734392/20648280/bbb053c2-b4e5-11e6-93d8-fadbc789e780.png)
 
 ## 実行方法
 1. リポジトリをcloneするか、zipをダウンロードするか、releaseに置いてあるzipファイルをダウンロードします。  
