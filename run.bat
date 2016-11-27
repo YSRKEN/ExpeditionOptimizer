@@ -2,7 +2,7 @@ echo off
 prompt $G
 :LOOP
 
-set /P TABLE_TYPE="種類(戦艦少女は1、艦これは2、終了は0)："
+set /P TABLE_TYPE="種類(戦艦少女は1、艦これは収入のみが2で消費考慮は3、終了は0)："
 if %TABLE_TYPE%==0 (goto EXIT)
 set /P SUPPLY_1="燃料："
 set /P SUPPLY_2="弾薬："

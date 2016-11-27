@@ -4,8 +4,17 @@ Encoding.default_external = "UTF-8"
 def limit(n, a, b)
 	[[n, a].max, b].min
 end
+class Integer
+	def to_s2
+		if self >= 0
+			return "+#{self}"
+		else
+			return "#{self}"
+		end
+	end
+end
 #引数読み込み
-TABLE_TYPE   = limit(ARGV[0].to_i,1,2)
+TABLE_TYPE   = limit(ARGV[0].to_i,1,3)
 SUPPLY = [eval(ARGV[1]).to_i,eval(ARGV[2]).to_i,eval(ARGV[3]).to_i,eval(ARGV[4]).to_i]
 FLEETS       = limit(ARGV[5].to_i,1,4)
 PAULING_TIME = [ARGV[6].to_i,1].max
@@ -32,7 +41,7 @@ query_file << "minimize\nmin_time\nsubject to\n"
 num = [1, 1, 1, 1.0/3]
 4.times{|si|
 	table_size.times{|ni|
-		query_file << "+#{table[ni][si]} x#{ni} "
+		query_file << "#{table[ni][si].to_s2} x#{ni} "
 	}
 	if AUTO_SUPPLY == 1
 		query_file << "+#{num[si]} min_time "

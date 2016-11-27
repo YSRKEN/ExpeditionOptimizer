@@ -10,13 +10,15 @@ Optimize schedule of expedition for Kantai Collection and Warship Girls
 ![実行例](https://cloud.githubusercontent.com/assets/3734392/20052981/d15bbec2-a519-11e6-8a3d-6c7191ab885a.png)
 
 ## 実行方法
-1. リポジトリをcloneするか、zipをダウンロードするか、releaseに置いてあるzipファイルをダウンロードします。
-2. calc.rbやrun.batが置いてあるのと同じフォルダに、[SCIP](http://scip.zib.de/)の実行ファイルを置きます。  
+1. リポジトリをcloneするか、zipをダウンロードするか、releaseに置いてあるzipファイルをダウンロードします。  
+2. RubyInstallerなどでRubyをインストールしておきます。  
+3. calc.rbやrun.batが置いてあるのと同じフォルダに、[SCIP](http://scip.zib.de/)の実行ファイルを置きます。  
 その際、「scip～～.exe」と長い名前になっているファイルを「scip.exe」とリネームしてください。
-3. run.batを実行します。最適化する対象の指定、資材量指定などを入力すれば計算が実行されます。
+4. run.batを実行します。最適化する対象の指定、資材量指定などを入力すれば計算が実行されます。
 
 ## 注意
 - 出力される総遠征時間は目安の数値です
 - キラ付けや大発には対応していません
 - temp.lp、query.txt、result.txt、query.solは自動生成されます(削除しても構いません)
-- 表示してほしくない遠征があれば、table1.csvやtable2.csvを自前で編集してください。UTF-8形式・CR+LFを想定しています
+- 艦これでは、遠征の度に遠征部隊に補給が必要ですので、収入のみ考慮するパターンと消費を考慮するパターンとの両方に対応しました
+- 表示してほしくない遠征があれば、table1.csvやtable2.csvやtable3.csvを自前で編集してください。UTF-8形式・CR+LFを想定しています
